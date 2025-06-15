@@ -67,22 +67,24 @@
     </div>
 
     <div id="gallery" class="section">
-        <div class="gallery-container">
-            <div class="main-image">
-                <img id="mainDisplay" src="images/zdjecie1.jpg" alt="Zdjęcie główne" />
-            </div>
-            <div class="thumbnails-wrapper">
-                <button class="arrow left" onclick="scrollThumbnails(-1)">&#10094;</button>
-                <div class="thumbnails-scroll" id="thumbnailsScroll">
-                    <div class="thumbnails">
-                        <img src="images/zdjecie1.jpg" onclick="changeImage(this.src)" />
-                        <img src="images/zdjecie2.jpg" onclick="changeImage(this.src)" />
-                        <img src="images/zdjecie3.jpg" onclick="changeImage(this.src)" />
-                        <img src="images/zdjecie4.jpg" onclick="changeImage(this.src)" />
-                        <img src="images/zdjecie5.jpg" onclick="changeImage(this.src)" />
-                    </div>
+        <div class="container">
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img id="mainDisplay" src="images/zdjecie1.jpg" alt="Zdjęcie główne" />
                 </div>
-                <button class="arrow right" onclick="scrollThumbnails(1)">&#10095;</button>
+                <div class="thumbnails-wrapper">
+                    <button class="arrow left" onclick="scrollThumbnails(-1)">&#10094;</button>
+                    <div class="thumbnails-scroll" id="thumbnailsScroll">
+                        <div class="thumbnails">
+                            <img src="images/zdjecie1.jpg" onclick="changeImage(this.src)" />
+                            <img src="images/zdjecie2.jpg" onclick="changeImage(this.src)" />
+                            <img src="images/zdjecie3.jpg" onclick="changeImage(this.src)" />
+                            <img src="images/zdjecie4.jpg" onclick="changeImage(this.src)" />
+                            <img src="images/zdjecie5.jpg" onclick="changeImage(this.src)" />
+                        </div>
+                    </div>
+                    <button class="arrow right" onclick="scrollThumbnails(1)">&#10095;</button>
+                </div>
             </div>
         </div>
     </div>
