@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komancze</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="topbar">
+        <button onclick="showSection('home')">Strona Główna</button>
+        <button onclick="showSection('about')">O nas</button>
+        <button onclick="showSection('gallery')">Galeria zdjęć</button>
+        <button onclick="showSection('events')">Najbliższe zbiórki</button>
+        <button onclick="showSection('contact')">Kontakt</button>
+    </div>
+
+    <div class="header">
+        <div class="gora">
+            <h1>Komancze</h1>
+            <p>Zastęp 5 BDH</p>
+        </div>
+    </div>
+    <div id="home" class="section active">
+        <div class="container">
+            <div class="card">
+                <h2>Czuwaj!</h2>
+                <p>Zastęp Komanczy to silna, zgrana wspólnota chłopaków...</p>
+            </div>
+            <div class="yapper">
+                <h2>Niedawne wydarzenia!:</h2>
+            </div>
+            <div class="card article-card">
+                <div class="article-image">
+                    <img src="images/zdjecie1.jpg" alt="Artykuł obrazek" />
+                </div>
+                <h3>Biwak drużyny </h3>
+                <p><strong>Krótki opis:</strong> pełna emocji i przygód, gdzie każdy z nas mógł się wykazać swoimi
+                    umiejętnościami.</p>
+                <p><strong>Data:</strong> 09.05.2025</p>
+                <p><strong>Miejsce:</strong> Miejsce wydarzenia</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Kim jesteśmy?</h2>
+                <p>Jesteśmy zastępem 5 Beskidzkiej Drużyny Harcerzy na Podbeskidziu</p>
+            </div>
+            <div class="card">
+                <h2>Jakie posiadacie osiągnięcia?</h2>
+                <p>Zajecie 1-ego miejsca na rywalizacji zastepów zimowisko 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="section">
+        <div class="gallery-container">
+            <div class="main-image">
+                <img id="mainDisplay" src="images/zdjecie1.jpg" alt="Zdjęcie główne" />
+            </div>
+            <div class="thumbnails-wrapper">
+                <button class="arrow left" onclick="scrollThumbnails(-1)">&#10094;</button>
+                <div class="thumbnails-scroll" id="thumbnailsScroll">
+                    <div class="thumbnails">
+                        <img src="images/zdjecie1.jpg" onclick="changeImage(this.src)" />
+                        <img src="images/zdjecie2.jpg" onclick="changeImage(this.src)" />
+                        <img src="images/zdjecie3.jpg" onclick="changeImage(this.src)" />
+                        <img src="images/zdjecie4.jpg" onclick="changeImage(this.src)" />
+                        <img src="images/zdjecie5.jpg" onclick="changeImage(this.src)" />
+                    </div>
+                </div>
+                <button class="arrow right" onclick="scrollThumbnails(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div id="events" class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Kiedy będzie następna zbiórka?</h2>
+                <p>Najbliższa zbiórka odbędzie się w sobotę XX.XX.2025 o godzinie 12.00</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Drużynowy: HO Wiktor Mięksiak</h2>
+                <p>+48 XXX XXX XXX</p>
+            </div>
+            <div class="card">
+                <h2>Zastępowy: Jan Bednarz</h2>
+                <p>+48 XXX XXX XXX</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Mateusz Sowa</p>
+
+</body>
+
+</html>
